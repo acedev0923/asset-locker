@@ -139,7 +139,6 @@ The `crates/lottie-parser` crate:
 
 ## Where I cut scope
 
-- **`@tanstack/router-devtools` warning**: The package renamed to `@tanstack/react-router-devtools` but the old one still works. Not worth fixing for a take-home.
 - **Thumbnail generation**: Rendering a Lottie frame in WASM would require a full canvas/renderer — significant scope. Placeholder SVG shown instead.
 - **Optimistic UI**: Would add TanStack Query `optimisticMutation` pattern, rolling back via `onError` handler. The mutation structure in `UploadDialog.tsx` is ready for this — just needs `onMutate` added.
 - **Benchmark**: See BENCHMARKS.md for the comparison approach I would have taken with more time.
