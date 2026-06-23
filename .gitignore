@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.output/
+dist/
+
+# WASM build output — compiled from crates/lottie-parser with wasm-pack.
+# Not committed so the evaluator can verify the crate builds from source.
+# Run step 2 in the Quick Start to generate these before running pnpm dev.
+apps/web/src/wasm/*.js
+apps/web/src/wasm/*.wasm
+apps/web/src/wasm/*.d.ts
+
+# Environment
+.env
+.env.local
+
+# Editor
+.DS_Store
+*.swp

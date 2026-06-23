@@ -1,0 +1,17 @@
+{
+  "name": "asset-locker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:wasm": "cd crates/lottie-parser && wasm-pack build --target web --out-dir ../../apps/web/src/wasm",
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm build:wasm && pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "db:migrate": "pnpm --filter web db:migrate",
+    "test": "pnpm --filter @asset-locker/core test"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
